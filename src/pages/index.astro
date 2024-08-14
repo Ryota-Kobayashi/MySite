@@ -1,50 +1,75 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { Image } from "astro:assets";
+import Avator from "../images/avator.jpg";
 ---
 
 <!doctype html>
 <html lang="ja">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <main class="container px-8 mx-auto">
+      <section id="about">
+        <div class="mt-20">
+          <Image
+            src={Avator}
+            class="block shadow-md h-32 w-32 rounded-full mx-auto"
+            alt="小林良太の写真"
+          />
+        </div>
+        <div class="mt-14 w-full mx-auto">
+          <h2 class="subheader">about me</h2>
+          <p class="text-center">
+            小林 良太<br />1989年生まれ福岡・佐賀・滋賀育ち。<br />
+            現在は福岡と大阪を中心にコンサルタント、Web Developerとしてお仕事をしています。<br
+            />📚と🐕と🥏が好き。
+          </p>
+        </div>
+      </section>
+      <section id="service">
+        <div class="mt-14 w-full mx-auto">
+          <h2 class="subheader">service</h2>
+          <h3 class="font-bold my-4">コンサルティング事業</h3>
+          <p>
+            中小零細企業を中心に「右腕がいない」「客観的に話をきいてもらいたい」「アイディアがほしい」など、事業戦略、営業戦略から組織・人事まで幅広くご相談を承っております。
+          </p>
+          <h3 class="font-bold mt-8 mb-4">Web制作事業</h3>
+          <p>
+            ビジネスを前進させ、制作コスト以上の成果を上げることを目的とした戦略的なWebサイトをご提案いたします。技術面では最新のフレームワークを使ったパフォーマンスの良いWeb制作を得意としております。
+          </p>
+        </div>
+        <a href="/form">
+          <button
+            class="group relative block w-full md:w-1/2 mx-auto my-20 h-12 items-center justify-center overflow-hidden rounded-md border border-black bg-transparent px-6 font-medium transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)]"
+            ><svg
+              class="h5 w-5 mr-2 inline-block align-text-bottom"
+              data-slot="icon"
+              fill="none"
+              stroke-width="1.5"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              ></path>
+            </svg>お問い合わせ</button
+          >
+        </a>
+      </section>
+      <section id="blog">
+        <div class="mt-14 w-full mx-auto">
+          <h2 class="subheader">blog</h2>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
