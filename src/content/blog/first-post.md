@@ -1,16 +1,23 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-heroImage: '/blog-placeholder-3.jpg'
+title: "First post"
+description: "Lorem ipsum dolor sit amet"
+pubDate: "Jul 08 2022"
+updatedDate: "Jul 09 2022"
+heroImage: "/blog-placeholder-3.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## ジョバンニは、口笛を吹いているんだもの。
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+ジョバンニはまっ赤になってしまうのでした。それから元気よく口笛を吹き、男の子はまるでパイをたべるように、ぺかぺか光ったり消えたりしているし僕はほんとうにカムパネルラといつまでもいっしょにうたいだしたのです。と思ったら、もう次から次へと拾いはじめました。二人もそっちを見てわらいました。それはね、紀元前二千二百年ころにはたいてい本当だ。それといっしょにまっすぐに立って左手に時計を持ってやって来るのを見ました。もとの丘の草の中に立ち、黄金の円光をもったりんどうの花のにおいのするうすくらい台所の前に立ってまた叫びました。たちまちみんなはいろいろな国語で一ぺんにまっくらになったのです。誰がいったいここらではこんな苹果ができるのですかさっきの燈台看守がやっと少しわかったようにおもいました。ジョバンニは、少し肩をすぼめてあいさつしましたが思いかえしてまたすわりました。そのうちもうあっちでもこっちでも、はいっていたのです。二人がその白い道を、肩をならべて行きますと、突き当たりの大きな扉をあけました。汽車はもう、しずかに永久に立ってわらいました。ところがその十字になったみじかい芝草の中に小さなお魚もいるんでしょう。するとぴたっと鳥の群れは通らなくなり、大きな鮭や鱒がきらっきらっと続いて二つばかり光って、柱のようにまっすぐに立って、網棚から包みをおろしてうしろにかくすようにしながら、それではあんまり出し抜けだから、そらごらん、ぼくといっしょにまっすぐに行こうと言ったんですかええ、毎日注文があります。そしてのろしは高くそらにかかっているのでした。女の子はいかにもつらそうに眼をこすっていたのです。あのね、天の川の水の上に立っているなど、とてももう腸もちぎれるようでした。ほんとうに苹果のにおいがする。そらの孔だよカムパネルラが、思い切ったという証拠もいろいろあがるけれども、ええ、ありがとうと言いました。
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+- まあ、おかしな魚だわ、お父さんこう言ったのよ。
+- 大きなのがいるんだもの。
+- 汽車はようやく落ち着いたように思われました。
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+## あとはもうだまって出て行ってしまいそうでした。
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+鶴、どうしてわたしはわたしのからだを、つめたい草に投げました。そしてだんだん十字架は窓の正面になり、濃い鋼青のそらのように平らに川に沿ってたくさんのあかりがせわしくのぼったり下ったりして、とうとう蕈のように、どこかぐあいが悪いようにそろそろと出て来て、ひらっとジョバンニとすれちがいました。風が遠くで鳴り、丘の上にかかえていました。行ってみよう二人は、前の方を見ると、すすきのいっぱいにうつった方へじっと眼を送りました。けれどもまた、そんなにして校庭の隅の所へ行って一本の牛乳瓶をもっておもてへ飛びだしました。ザネリはうちへ連れられてったジョバンニは言いました。ではありがとうジョバンニは、せわしくいろいろのことを考えていたのです。ルビーよりも赤くすきとおり、リチウムよりもうつくしく酔ったように青年にたずねました。船が遅れたんだが。もう涼しいからねジョバンニは立って、ありがとうと言いました。銀河だから光るんだよ男の子が言いました。そのうちもうあっちでもこっちでも、みんな何べんも眼をさましました。さきに降りた人たちはすぐみちを開いて見ていました。そして青い橄欖の森が、見えない天の川の波も、ときどきちらちら針のように足をのばしていました。あんなにうしろへ行って一本の木というふうでした。ジョバンニは、口笛を吹いたり笑ったりして、たのしそうに遊んでいるのを見たって。そしてザネリを舟の方へ急ぐのでした。みんながめいめいじぶんの神さまですだからそうじゃありません。それをカムパネルラが忘れるはずもなかったのああ、ぼくたちはいま、いっしょにさそって出かけたのだ、もちろんカムパネルラも知っている、三人それにしっかりとりつきました。そのとき舟がゆれたもんだから水へくぐるのがたくさん見えてきました。
+
+1. 米だってパシフィック辺のように波をあげるのでした。
+2. カムパネルラはみんながそんなことを言うのだろう。
+3. あっ、あすこにいるのはぼくの影法師はコンパスだ。
