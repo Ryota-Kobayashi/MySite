@@ -1,9 +1,10 @@
 ---
-title: "First post"
+title: "なぜ私たちは燃え尽きてしまうのか"
 description: "Lorem ipsum dolor sit amet"
-pubDate: "Jul 08 2022"
+pubDate: "2024 08 30"
 updatedDate: "Jul 09 2022"
 heroImage: "/blog-placeholder-3.jpg"
+tags: [コンサル, 読書メモ]
 ---
 
 ## ジョバンニは、口笛を吹いているんだもの。
