@@ -1,0 +1,18 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <main class="container px-8 mx-auto">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

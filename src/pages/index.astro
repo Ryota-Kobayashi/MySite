@@ -1,59 +1,49 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION, SERVICES } from "../consts";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SERVICES } from "../consts";
 import { Image } from "astro:assets";
-import BaseHead from "../components/BaseHead.astro";
 import ContactButton from "../components/ContactButton.astro";
 import BlogList from "../components/BlogList.astro";
-import Footer from "../components/Footer.astro";
 import Avator from "../images/avator.jpg";
 ---
 
-<!doctype html>
-<html lang="ja">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <main class="container px-8 mx-auto">
-      <section id="about">
-        <div class="mt-20">
-          <Image
-            src={Avator}
-            class="block shadow-md h-32 w-32 rounded-full mx-auto"
-            alt="小林良太の写真"
-            loading="eager"
-          />
-        </div>
-        <div class="mt-14 w-full mx-auto">
-          <h2 class="subheader">about me</h2>
-          <p class="text-center">
-            小林 良太<br />1989年生まれ福岡・佐賀・滋賀育ち。<br />
-            現在は福岡と大阪を中心にコンサルタント、Web Developerとしてお仕事をしています。<br
-            />📚と🐕と🥏が好き。
-          </p>
-        </div>
-      </section>
-      <section id="service">
-        <div class="mt-14 w-full mx-auto">
-          <h2 class="subheader">service</h2>
-          {
-            SERVICES.map((service) => (
-              <div>
-                <h3 class="font-bold my-4">{service.title}</h3>
-                <p>{service.description}</p>
-              </div>
-            ))
-          }
-        </div>
-        <ContactButton />
-      </section>
-      <section id="blog">
-        <div class="mt-14 w-full mx-auto">
-          <h2 class="subheader">blog</h2>
-          <BlogList />
-        </div>
-      </section>
-    </main>
-    <Footer />
-  </body>
-</html>
+<BaseLayout>
+  <section id="about">
+    <div class="mt-20">
+      <Image
+        src={Avator}
+        class="block shadow-md h-32 w-32 rounded-full mx-auto"
+        alt="小林良太の写真"
+        loading="eager"
+      />
+    </div>
+    <div class="mt-14 w-full mx-auto">
+      <h2 class="subheader">about me</h2>
+      <p class="text-center">
+        小林 良太<br />1989年生まれ福岡・佐賀・滋賀育ち。<br />
+        現在は福岡と大阪を中心にコンサルタント、Web Developerとしてお仕事をしています。<br
+        />📚と🐕と🥏が好き。
+      </p>
+    </div>
+  </section>
+  <section id="service">
+    <div class="mt-14 w-full mx-auto">
+      <h2 class="subheader">service</h2>
+      {
+        SERVICES.map((service) => (
+          <div>
+            <h3 class="font-bold my-4">{service.title}</h3>
+            <p>{service.description}</p>
+          </div>
+        ))
+      }
+    </div>
+    <ContactButton />
+  </section>
+  <section id="blog">
+    <div class="mt-14 w-full mx-auto">
+      <h2 class="subheader">blog</h2>
+      <BlogList />
+    </div>
+  </section>
+</BaseLayout>
