@@ -2,31 +2,39 @@
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import BaseLayout from "./BaseLayout.astro";
-
+import "../styles/blogPost.css";
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, pubDate, heroImage, tags } = Astro.props;
 ---
 
 <BaseLayout>
   <article>
     <div class="hero-image">
-      {heroImage && <img src={heroImage} class="rounded mt-20" alt="" />}
+      {heroImage && <img src={heroImage} class="rounded-lg mt-20" alt="" />}
     </div>
     <div class="">
       <div class="title">
-        <div class="date">
+        <span class="block date text-md mt-8 mb-4">
           <FormattedDate date={pubDate} />
+        </span>
+        <div class="flex flex-wrap">
           {
-            updatedDate && (
-              <div class="last-updated-on">
-                更新 <FormattedDate date={updatedDate} />
-              </div>
+            tags && tags.length > 0 ? (
+              tags.map((tag) => (
+                <a class="no-underline" href={`/tags/${tag}/`}>
+                  <span class="block mr-2 mb-4 px-2 py-1 ring-1 ring-gray-400 rounded font-Zenkaku text-xs">
+                    # {tag}
+                  </span>
+                </a>
+              ))
+            ) : (
+              <li>タグなし</li>
             )
           }
         </div>
-        <h1>{title}</h1>
-        <hr />
+        <h1 class="font-Zenkaku font-bold text-2xl">{title}</h1>
+        <hr class="my-4" />
       </div>
       <slot />
     </div>
