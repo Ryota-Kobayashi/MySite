@@ -21,7 +21,7 @@
 
 @layer components {
   .subheader {
-    @apply font-Vibur uppercase text-center text-2xl mb-8;
+    @apply font-Vibur uppercase text-center text-2xl md:text-3xl mb-8;
   }
 }
 
