@@ -1,6 +1,16 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
 export const SITE_TITLE = "小林 良太";
 export const SITE_DESCRIPTION =
   "福岡と大阪を中心にコンサルティング事業とWeb制作事業を行う小林 良太の個人サイト兼Blogです。Blogでは仕事で得た知見を中心に、仕事用に読んだ本の読書メモなどおそらく誰かのためになる情報を発信していきます。";
+
+export const SERVICES = [
+  {
+    title: "コンサルティング事業",
+    description:
+      "中小零細企業を中心に「右腕がいない」「客観的に話をきいてもらいたい」「アイディアがほしい」など、事業戦略、営業戦略から組織・人事まで幅広くご相談を承っております。",
+  },
+  {
+    title: "Web制作事業",
+    description:
+      "ビジネスを前進させ、制作コスト以上の成果を上げることを目的とした戦略的なWebサイトをご提案いたします。技術面では最新のフレームワークを使ったパフォーマンスの良いWeb制作を得意としております。",
+  },
+];

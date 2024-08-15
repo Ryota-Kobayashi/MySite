@@ -1,8 +1,10 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { SITE_TITLE, SITE_DESCRIPTION, SERVICES } from "../consts";
 import { Image } from "astro:assets";
+import BaseHead from "../components/BaseHead.astro";
+import ContactButton from "../components/ContactButton.astro";
+import BlogList from "../components/BlogList.astro";
+import Footer from "../components/Footer.astro";
 import Avator from "../images/avator.jpg";
 ---
 
@@ -19,6 +21,7 @@ import Avator from "../images/avator.jpg";
             src={Avator}
             class="block shadow-md h-32 w-32 rounded-full mx-auto"
             alt="小林良太の写真"
+            loading="eager"
           />
         </div>
         <div class="mt-14 w-full mx-auto">
@@ -33,40 +36,21 @@ import Avator from "../images/avator.jpg";
       <section id="service">
         <div class="mt-14 w-full mx-auto">
           <h2 class="subheader">service</h2>
-          <h3 class="font-bold my-4">コンサルティング事業</h3>
-          <p>
-            中小零細企業を中心に「右腕がいない」「客観的に話をきいてもらいたい」「アイディアがほしい」など、事業戦略、営業戦略から組織・人事まで幅広くご相談を承っております。
-          </p>
-          <h3 class="font-bold mt-8 mb-4">Web制作事業</h3>
-          <p>
-            ビジネスを前進させ、制作コスト以上の成果を上げることを目的とした戦略的なWebサイトをご提案いたします。技術面では最新のフレームワークを使ったパフォーマンスの良いWeb制作を得意としております。
-          </p>
+          {
+            SERVICES.map((service) => (
+              <div>
+                <h3 class="font-bold my-4">{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+            ))
+          }
         </div>
-        <a href="/form">
-          <button
-            class="group relative block w-full md:w-1/2 mx-auto my-20 h-12 items-center justify-center overflow-hidden rounded-md border border-black bg-transparent px-6 font-medium transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)]"
-            ><svg
-              class="h5 w-5 mr-2 inline-block align-text-bottom"
-              data-slot="icon"
-              fill="none"
-              stroke-width="1.5"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-              ></path>
-            </svg>お問い合わせ</button
-          >
-        </a>
+        <ContactButton />
       </section>
       <section id="blog">
         <div class="mt-14 w-full mx-auto">
           <h2 class="subheader">blog</h2>
+          <BlogList />
         </div>
       </section>
     </main>
