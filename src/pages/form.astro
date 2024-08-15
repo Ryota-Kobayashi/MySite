@@ -129,12 +129,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         .then(async (token) => {
           const target = event.target as typeof event.target & {
             name: { value: string };
+            company: { value: string };
             email: { value: string };
             message: { value: string };
           };
 
           const data = {
             name: target.name.value,
+            company: target.company.value,
             email: target.email.value,
             message: target.message.value,
             googleReCaptchaToken: token,
