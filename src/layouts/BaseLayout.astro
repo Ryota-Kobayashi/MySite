@@ -10,7 +10,6 @@ import Footer from "../components/Footer.astro";
     <!-- Google tag (gtag.js) -->
     <script
       type="text/partytown"
-      async
       src="https://www.googletagmanager.com/gtag/js?id=G-V3H6TZZPP1"></script>
     <script type="text/partytown">
       window.dataLayer = window.dataLayer || [];
@@ -18,7 +17,6 @@ import Footer from "../components/Footer.astro";
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-V3H6TZZPP1");
     </script>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
