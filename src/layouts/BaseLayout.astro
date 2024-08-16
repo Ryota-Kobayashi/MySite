@@ -7,7 +7,7 @@ import Footer from "../components/Footer.astro";
 <!doctype html>
 <html lang="ja">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <!-- Google tag (gtag.js) -->
     <script
       type="text/partytown"
       async
@@ -21,6 +21,7 @@ import Footer from "../components/Footer.astro";
 
       gtag("config", "G-V3H6TZZPP1");
     </script>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <main class="container px-8 mx-auto">
