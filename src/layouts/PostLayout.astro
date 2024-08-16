@@ -1,0 +1,67 @@
+---
+import type { CollectionEntry } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+import PostHead from "../components/PostHead.astro";
+import Footer from "../components/Footer.astro";
+import { SocialShareButtons } from "../components/ShareButton";
+import "../styles/blogPost.css";
+import { SITE_DESCRIPTION } from "../consts";
+import type { loadRenderers } from "astro:container";
+type Props = CollectionEntry<"blog">["data"];
+
+const currentURL = new URL(Astro.url.pathname, Astro.site);
+
+const { title, pubDate, heroImage, tags } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <PostHead
+      title={title}
+      description={SITE_DESCRIPTION}
+      heroImage={heroImage}
+    />
+  </head>
+  <body>
+    <main class="container px-8 mx-auto">
+      <article>
+        <div class="hero-image">
+          {heroImage && <img src={heroImage} class="rounded-lg mt-20" alt="" />}
+        </div>
+        <div class="">
+          <div class="title">
+            <span class="block date text-md mt-8 mb-4">
+              <FormattedDate date={pubDate} />
+            </span>
+            <div class="flex flex-wrap">
+              {
+                tags && tags.length > 0 ? (
+                  tags.map((tag) => (
+                    <a class="no-underline" href={`/tags/${tag}/`}>
+                      <span class="block mr-2 mb-4 px-2 py-1 ring-1 ring-gray-400 rounded font-Zenkaku text-xs">
+                        # {tag}
+                      </span>
+                    </a>
+                  ))
+                ) : (
+                  <span>タグなし</span>
+                )
+              }
+            </div>
+            <h1 class="font-Zenkaku font-bold text-2xl">{title}</h1>
+            <SocialShareButtons client:load url={currentURL} title={title} />
+            <hr class="my-4" />
+          </div>
+          <slot />
+        </div>
+        <hr class="my-4" />
+        <span class="block font-Vibur uppercase text-center">
+          <a href="/">Back to HOME</a>
+        </span>
+      </article>
+      <SocialShareButtons client:load url={currentURL} title={title} />
+      <Footer />
+    </main>
+  </body>
+</html>
