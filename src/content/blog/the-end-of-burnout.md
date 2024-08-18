@@ -1,5 +1,5 @@
 ---
-title: "『なぜ私たちは燃え尽きてしまうのかから』から考える離職を避けるためにできること"
+title: "『なぜ私たちは燃え尽きてしまうのか』から考える離職を避けるためにできること"
 pubDate: "2024 08 18"
 heroImage: "/thumbnail/the-end-of-burnout.png"
 tags: [コンサル, 読書メモ]
