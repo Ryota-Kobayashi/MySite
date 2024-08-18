@@ -3,19 +3,15 @@
 @tailwind utilities;
 
 h2 {
-  @apply font-Zenkaku font-bold text-xl my-4;
+  @apply font-Zenkaku font-bold text-xl mt-10 mb-4;
 }
 
 h3 {
-  @apply font-Zenkaku font-bold text-lg my-4;
-}
-
-p {
-  @apply mb-4;
+  @apply font-Zenkaku font-bold text-lg mt-10;
 }
 
 blockquote {
-  @apply text-gray-500 border-l-4 pl-4 border-gray-400;
+  @apply text-gray-500 border-l-4 pl-4 my-4 border-gray-400;
 }
 
 a {
@@ -32,4 +28,9 @@ ol {
 
 li {
   @apply py-2;
+}
+
+strong,
+b {
+  @apply border-b border-b-blue-500 border-dashed pb-1;
 }

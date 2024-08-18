@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import PostHead from "../components/PostHead.astro";
@@ -33,7 +32,7 @@ const { title, pubDate, heroImage, tags } = Astro.props;
             )
           }
         </div>
-        <div class="">
+        <div>
           <div class="title">
             <span class="block date text-md mt-8 mb-4">
               <FormattedDate date={pubDate} />
@@ -53,14 +52,16 @@ const { title, pubDate, heroImage, tags } = Astro.props;
                 )
               }
             </div>
-            <h1 class="font-Zenkaku font-bold text-2xl">{title}</h1>
+            <h1 class="font-Zenkaku font-bold text-2xl leading-loose">
+              {title}
+            </h1>
             <SocialShareButtons client:load url={currentURL} title={title} />
-            <hr class="my-4" />
+            <hr class="mt-4 mb-6" />
           </div>
           <slot />
         </div>
-        <hr class="my-4" />
-        <span class="block font-Vibur uppercase text-center">
+        <hr class="my-6" />
+        <span class="block mt-6 font-Vibur uppercase text-center">
           <a href="/">Back to HOME</a>
         </span>
       </article>

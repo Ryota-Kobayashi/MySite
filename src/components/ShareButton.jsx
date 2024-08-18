@@ -8,7 +8,7 @@ import {
 export const SocialShareButtons = (props) => {
   const { url, title } = props;
   return (
-    <div className="text-right mt-2">
+    <div className="text-right mt-4">
       <TwitterShareButton url={url} title={title} className="mx-2">
         <XIcon round size={32} />
       </TwitterShareButton>
