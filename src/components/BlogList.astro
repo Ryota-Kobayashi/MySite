@@ -29,7 +29,7 @@ const posts = (await getCollection("blog")).sort(
           <div class="flex flex-wrap">
             {post.data.tags.map((tag) => (
               <a href={`/tags/${tag}/`}>
-                <span class="ml-2 mr-1 my-2 px-2 py-1 ring-1 ring-gray-400 rounded font-Zenkaku text-xs">
+                <span class="block ml-2 mr-1 my-2 px-2 py-1 ring-1 ring-gray-400 rounded font-Zenkaku text-xs">
                   # {tag}
                 </span>
               </a>
