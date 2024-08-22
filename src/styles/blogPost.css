@@ -10,6 +10,14 @@ h3 {
   @apply font-Zenkaku font-bold text-lg mt-10;
 }
 
+p {
+  @apply my-2;
+}
+
+hr {
+  @apply my-4;
+}
+
 blockquote {
   @apply text-gray-500 border-l-4 pl-4 my-4 border-gray-400;
 }
