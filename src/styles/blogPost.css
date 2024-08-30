@@ -11,7 +11,7 @@ h3 {
 }
 
 p {
-  @apply my-2;
+  @apply my-4;
 }
 
 hr {
